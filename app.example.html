@@ -1,0 +1,14 @@
+<!-- Copy this file into app.html if you want custom DOM files including and stuff -->
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head>
+    {{ HEAD }}
+    <!-- Google web API platform -->
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="[YOUR_CLIENT_ID]">
+    <script src="https://apis.google.com/js/api:client.js"></script>
+  </head>
+  <body {{ BODY_ATTRS }}>
+    {{ APP }}
+  </body>
+</html>

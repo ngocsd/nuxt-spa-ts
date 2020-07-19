@@ -1,0 +1,1 @@
+# This example2 directory use vanilla syntax approach
