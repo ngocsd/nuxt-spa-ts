@@ -1,8 +1,6 @@
 import { RootState } from './state'
 import { IAuth, RootActions, ILogin, RootMutations } from '~/typings'
 import { Actions } from '~/utils/vuex-modules-builder'
-// const Cookie = process.client ? require('js-cookie') : undefined
-// const cookieparser = process.server ? require('cookieparser') : undefined
 
 export default Actions<RootState>({
   // Called manually in middleware in SPA mode
@@ -30,7 +28,7 @@ export default Actions<RootState>({
     commit(RootMutations.SET_AUTH, auth) // Mutating to store for client rendering
   },
   [RootActions.logout]({ commit }: any) {
-    localStorage.remove('auth')
+    localStorage.removeItem('auth')
     commit(RootMutations.SET_AUTH, null)
   }
 })
